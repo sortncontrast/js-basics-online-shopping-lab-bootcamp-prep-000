@@ -45,8 +45,7 @@ function total() {
   }return totalPrice;
 }
 
-//Tests 12 and 13
-
+//Tests 12 and 13 -- Passed
 function removeFromCart(item) {
   var index = cart.findIndex(cart => cart.itemName === item);
   if(index === -1) {
