@@ -35,13 +35,9 @@ function viewCart() {
 
 //Test 11 -- Passed - but see if you can reduce
 function total() {
-  var priceArray = [];
-  for(var price=0; price<cart.length; price++) {
-    priceArray.push(cart[price].itemPrice);
-  }
   var totalPrice = 0;
   for(var total=0; total<cart.length; total++){
-    totalPrice += priceArray[total];
+    totalPrice += cart[total].itemPrice;
   }return totalPrice;
 }
 
