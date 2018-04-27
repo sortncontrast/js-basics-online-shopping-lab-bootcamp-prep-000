@@ -40,7 +40,7 @@ function total() {
     priceArray.push(cart[price].itemPrice);
   }
   var totalPrice = 0;
-  for(var total=0; total<priceArray.length; total++){
+  for(var total=0; total<cart.length; total++){
     totalPrice += priceArray[total];
   }return totalPrice;
 }
