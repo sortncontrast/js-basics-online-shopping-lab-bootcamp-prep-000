@@ -46,31 +46,16 @@ function total() {
 }
 
 //Tests 12 and 13
-var a = [{name:"bull", text: "sour"},
-    { name: "tom", text: "tasty" },
-    { name: "tom", text: "tasty" }
-]
-var index = a.findIndex(x => x.name=="bob")
-// here you can check specific property for an object whether it exist in your array or not
-
-if (index === -1){
-    a.push({your_object});
-}
-else console.log("object already exists")
 
 function removeFromCart(item) {
-  var index = cart.findIndex()
-}
-
-function removeFromCart(item) {
-  if(item in cart === false) {
+  var index = cart.findIndex(cart => cart.itemName === item);
+  if(index === -1) {
     return "That item is not in your cart.";
   }else {
     for(var identity=0; identity<=cart.length; identity++) {
       if(cart[identity].itemName === item) {
         cart.splice(identity,1);
-      }else {
-        return "I'm not sure what to do next.";
+        return `${item} has been removed from your cart.`
       }
     }
   }
