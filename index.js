@@ -33,7 +33,7 @@ function viewCart() {
     }
 }
 
-//Test 11 -- Passed - but see if you can reduce
+//Test 11 -- Passed
 function total() {
   var totalPrice = 0;
   for(var total=0; total<cart.length; total++){
